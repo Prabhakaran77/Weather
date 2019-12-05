@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="weather.css" rel="stylesheet"> 
+    <script src="weather.js"></script>
+</head>
+<body>
+    <div id="outerbox">
+        <div id="innerbox1">
+            <h1>Weather Report</h1>
+            <form>
+                City:
+                <input type="text" name="cityname" id="cityname" placeholder="city name" >
+                <input type="button" id="result" value ="Get Result" onclick="getWeather()"/>
+            </form>
+        </div>
+        <div id="innerbox2">
+            <form>
+                Temperature:<br>
+                <input type="display" id="temp_display" name="display" disabled><br>
+                Min_Temperature:<br>
+                <input type="display" id="min_temp_display" name="display"  disabled><br>
+                Max_Temperature:<br>
+                <input type="display" id="max_temp_display" name="display"  disabled><br>
+                Humidity:<br>
+                <input type="display" id="humidity_display" name="display"  disabled><br>
+                Weather:<br>
+                <input type="display" id="weather_display" name="display" disabled><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

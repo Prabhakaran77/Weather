@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+}
+#innerbox1{
+    background-color:silver;
+    margin-left:20%;
+    margin-right:20%;
+    opacity: 60%;
+}
+#innerbox2{
+    background-color:sandybrown;
+    margin-left:20%;
+    margin-right:20%;
+    opacity: 60%;
+}
+input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-weight: 1000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=display]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-weight: 1000;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #result
+    {
+        margin-left: 60%;
+        margin-bottom: 1%;
+        background: aliceblue;
+        border: 1px solid black;
+        size: 10%;
+        font-size: 140%;
+    }
+    body
+        {
+            background-image: url("bg.jpg");
+            background-size: 100% ;
+        } 
