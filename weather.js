@@ -3,6 +3,10 @@ var city;
 const URL='http://api.openweathermap.org/data/2.5/weather?q=';
 const API='&APPID=f88d1d041bd5e3282a2d263b47e427a8';
 var data;
+const ERROR='error';
+const ERR='err';
+const SHOW='inline';
+const HIDE='none';
 
 function getWeather()
 {
@@ -25,8 +29,20 @@ function getWeather()
                 }
             else
                 {
-                    alert("enter valid city name");
+                    errDisplay("enter valid city name");
                 }
         }
     xhr.send();
+}
+function errDisplay(msg)
+{
+    var error=document.getElementById(ERROR);
+    document.getElementById(ERR).style.display=SHOW;
+    error.style.display=SHOW;
+    error.value=msg;
+}
+function hide()
+{
+    document.getElementById(ERROR).style.display=HIDE;
+    document.getElementById(ERR).style.display=HIDE;
 }

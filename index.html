@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather</title>
     <link href="weather.css" rel="stylesheet"> 
     <script src="weather.js"></script>
 </head>
@@ -15,6 +15,10 @@
             <form>
                 City:
                 <input type="text" name="cityname" id="cityname" placeholder="city name" >
+                <form id="error_display">
+                    <input type="display" id="error" name="display" id="display" disabled>
+                    <input type="button" id="err" name="err" value="OK" onclick="hide()"/>
+                </form>
                 <input type="button" id="result" value ="Get Result" onclick="getWeather()"/>
             </form>
         </div>

@@ -2,16 +2,14 @@ h1{
     text-align: center;
 }
 #innerbox1{
-    background-color:silver;
+    background-color:#E3E4E7;
     margin-left:20%;
     margin-right:20%;
-    opacity: 60%;
 }
 #innerbox2{
-    background-color:sandybrown;
+    background-color:#FAA238;
     margin-left:20%;
     margin-right:20%;
-    opacity: 60%;
 }
 input[type=text]{
     width: 30%;
@@ -37,13 +35,43 @@ input[type=text]{
     {
         margin-left: 60%;
         margin-bottom: 1%;
-        background: aliceblue;
-        border: 1px solid black;
+        background: #A3BFD9;
+        border: 1px solid #000000;
         size: 10%;
         font-size: 140%;
     }
-    body
+    @media only screen and (max-width: 550px)
         {
-            background-image: url("bg.jpg");
-            background-size: 100% ;
-        } 
+            #result
+            {
+                margin-left: 30%;
+                margin-right: 10%;
+                margin-bottom: 1%;
+                background: #A3BFD9;
+                border: 1px solid #000000;
+                size:0%;
+                font-size: 60%;
+            }  
+         }
+    @media only screen and (max-width: 150px)
+    {
+        #result
+            {
+                margin-left: 30%;
+                margin-right: 10%;
+                margin-bottom: 1%;
+                background: #A3BFD9;
+                border: 1px solid #000000;
+                size:0%;
+                font-size: 20%;
+            }  
+    }
+    #error{
+        display:none;
+        width:50%;
+        background-color:#EDEDED;
+        font-weight: 800;
+    }
+    #err{
+        display: none;
+    }
